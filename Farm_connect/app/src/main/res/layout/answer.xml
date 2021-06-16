@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/post_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="My name is Tushar Dhakad and I m a 3rd year Student. " />
+
+    <TextView
+        android:id="@+id/answeredBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/post_answer"
+        android:layout_alignParentRight="true"
+        android:text="Answered By"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

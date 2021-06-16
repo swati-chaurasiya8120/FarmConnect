@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginType"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:gravity="center_horizontal"
+    android:id="@+id/LinearLayoutLoginType1">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:src="@drawable/image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome !"
+            android:textColor="#0d6e6a"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:textColor="#0d6e6a"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Sign_with_mailInLoginType"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backgroundbutton"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="30dp"
+            android:drawableEnd="@drawable/email_icon"
+            android:text="Sign In With Email"
+            android:drawableRight="@drawable/email_icon"
+           />
+
+        <Button
+            android:id="@+id/Sign_in_with_phone_btn_login_type"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backgroundbutton"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="sign in with phone"
+            android:drawableEnd="@drawable/ic_baseline_phone_24"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_baseline_phone_24"
+             />
+            <Button
+            android:id="@+id/create_account_btn_loginType"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backgroundbutton"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Create Account"
+            android:drawableEnd="@drawable/ic_baseline_add_"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/ic_baseline_add_" />
+
+    </LinearLayout>
+
+</ScrollView>

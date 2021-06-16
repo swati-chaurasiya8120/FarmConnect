@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/question_activity_heading"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit_text_border"
+        android:textColor="@color/white"
+        android:text="@string/question_activity_post_button"
+        android:layout_marginVertical="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/heading">
+
+        <EditText
+            android:id="@+id/title_text_view"
+            android:inputType="text"
+            android:background="@drawable/edit_text_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:hint="@string/title_hint"
+            android:maxLines="1" />
+
+        <AutoCompleteTextView
+            android:id="@+id/user_question"
+
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:hint="@string/question_hint"/>
+
+        <EditText
+            android:id="@+id/tags"
+            style="@style/Widget.AppCompat.EditText"
+            android:inputType="textCapWords"
+            android:background="@drawable/edit_text_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:hint="@string/tags_hint"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ask_a_question"
+        app:showAsAction="ifRoom"
+        android:title="Ask a question"/>
+
+    <item
+        android:id="@+id/customize_result"
+        android:title="Customize"
+        app:showAsAction="never"/>
+
+</menu>
